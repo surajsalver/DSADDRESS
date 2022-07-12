@@ -57,6 +57,7 @@ public class StreetFacade extends AbstractFacade<Street> {
                 }
             } catch (UnknownResourceException ex) {
                 //Do nothing create ok
+                System.out.println("Hello");
                 Logger.getLogger(StreetFacade.class.getName()).log(Level.INFO, "Street with id = " + entity.getId() + " is being posted", ex);
             }
         }
